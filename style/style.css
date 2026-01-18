@@ -6,7 +6,7 @@
 .inter-font {
   font-family: "Inter", sans-serif;
 }
-header {
+header , .featured ,.the-host {
   background-color: #1a0b2e;
 }
 /* shared style */
@@ -169,7 +169,54 @@ header {
   max-width: 300px;
   margin-top: 25px;
 }
-
+.featured-container{
+    padding: 120px 200px;
+    margin: 0 auto;
+}
+.featured-container h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.featured-contant{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.featured-card{
+    max-width: 380px;
+    border-radius: 40px;
+    background-color: #250D44;
+    padding: 24px;
+}
+.featured-card h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    max-width: 332px;
+}
+.featured-card p{
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.8;
+    opacity: 60%;
+    max-width: 332px;
+    margin: 12px 0px;
+}
+.featured-card h6{
+    font-size: 1rem;
+    color: #00ff88;
+    line-height: 1.8;
+    font-weight: 600;
+    max-width: 332px;
+}
+.watch-time {
+    align-items: center;
+    gap: 10px;
+}
+.watch-time img{
+    max-width: 20px;
+    max-height: 20px
+}
 @media screen and (max-width: 576px) {
   .brand {
     font-size: 2.5rem;
@@ -247,6 +294,7 @@ header {
   }
   .choose-card {
     padding: 20px;
+    justify-content: center;
   }
   .choose-card h4 {
     font-size: 1.37rem;
@@ -259,6 +307,28 @@ header {
     max-width: 300px;
     margin-top: 25px;
   }
+  .featured-container{
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+.featured-container h2{
+    font-size: 2rem;
+    margin-bottom: 24px;
+    margin-top: 16px;
+}
+.featured-contant{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 16px;
+}
+.featured-card{
+    max-width: 400px;
+    padding: 16px;
+}
+.featured-card h4{
+    font-size: 1.25rem;
+    max-width: 368px;
+}
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .about-user {
@@ -273,4 +343,14 @@ header {
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
   }
+  .featured-contant{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 16px;
+}
+.featured-container h2{
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    margin-top: 16px;
+}
 }
