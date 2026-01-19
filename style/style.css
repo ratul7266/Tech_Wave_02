@@ -34,7 +34,8 @@ header,
 }
 .menu a,
 .btn a,
-.Listen-btn a {
+.Listen-btn a,
+.sub-btn a {
   text-decoration: none;
   color: #ffffff;
 }
@@ -50,7 +51,8 @@ header,
   margin: 0 auto;
   padding: 16px 0;
 }
-.hero-section span {
+.hero-section span,
+.footer-section span {
   color: transparent;
   background-image: linear-gradient(
     to top right,
@@ -71,6 +73,70 @@ header,
   display: none;
   font-size: 28px;
   cursor: pointer;
+}
+
+.bannar {
+  background-image: url(/images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bannar-section {
+  padding: 101px 0;
+}
+
+.banner-content {
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+#new-badge button {
+  padding: 8px 16px;
+  font-size: 1.12rem;
+  font-weight: 600;
+  border-radius: 48px;
+  border: none;
+  color: black;
+  background-color: #00ff88;
+  position: absolute;
+  top: -40%;
+  right: -80%;
+}
+.sub-btn {
+  color: #00ff88;
+  border: 1px solid #00ff88;
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 48px;
+}
+.banner-content p {
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+
+/* images */
+.hero-circle img {
+  height: 350px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.microphone-img {
+  width: 116px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle-img {
+  position: relative;
+  margin-bottom: 40px;
 }
 .about {
   background-color: #1a0b2e;
@@ -244,13 +310,71 @@ header,
   margin-bottom: 16px;
 }
 .host-link {
-  padding: 9.5px 10px;
+  padding: 10px;
   border: 1px solid #533c72;
   border-radius: 100%;
   max-width: 20px;
   max-height: 20px;
-  margin-right: 8px;
-  justify-items: center;
+  align-items: center;
+}
+footer {
+  background-image:
+    linear-gradient(rgba(30, 20, 60, 0.78), rgba(50, 30, 90, 0.88)),
+    url(/images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.footer-section {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brand {
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.2s;
+}
+
+.footer-link:hover {
+  transform: translateY(-3px);
+}
+
+.footer-link img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.footer-link h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+footer p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
 }
 @media screen and (max-width: 576px) {
   .brand {
@@ -265,7 +389,25 @@ header,
   .menu-icon {
     display: block;
   }
-
+  /* images */
+  .hero-circle img {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .microphone-img {
+    height: 70px;
+  }
+  .circle-img {
+    position: relative;
+  }
+  #new-badge button {
+    position: absolute;
+    top: -75%;
+    right: -40%;
+  }
   .about {
     padding: 40px 20px;
   }
@@ -357,6 +499,7 @@ header,
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
+    justify-items: center;
   }
   .featured-card {
     max-width: 400px;
@@ -391,6 +534,21 @@ header,
     max-height: 20px;
     margin-right: 8px;
     justify-items: center;
+  }
+  .footer-section {
+    padding: 50px 15px;
+  }
+  .footer-links {
+    gap: 1.8rem 2.5rem;
+  }
+
+  .footer-link img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-link h6 {
+    font-size: 0.95rem;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
