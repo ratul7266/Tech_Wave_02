@@ -79,9 +79,9 @@ header,
   font-size: 28px;
   cursor: pointer;
 }
-
+/* error */
 .bannar {
-  background-image: url("/images/hero-bg.png");
+  background-image: url("./images/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -325,8 +325,9 @@ header,
   max-height: 20px;
   align-items: center;
 }
+/* error */
 footer {
-  background-image: url("/images/footer-bg.png");
+  background-image: url("./images/footer-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
