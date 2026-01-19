@@ -6,7 +6,9 @@
 .inter-font {
   font-family: "Inter", sans-serif;
 }
-header , .featured ,.the-host {
+header,
+.featured,
+.the-host {
   background-color: #1a0b2e;
 }
 /* shared style */
@@ -169,53 +171,86 @@ header , .featured ,.the-host {
   max-width: 300px;
   margin-top: 25px;
 }
-.featured-container{
-    padding: 120px 200px;
-    margin: 0 auto;
+.featured-container,
+.host-container {
+  padding: 120px 200px;
+  margin: 0 auto;
 }
-.featured-container h2{
-    text-align: center;
-    margin-bottom: 40px;
+.featured-container h2,
+.host-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
 }
-.featured-contant{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 30px;
+.featured-contant {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
-.featured-card{
-    max-width: 380px;
-    border-radius: 40px;
-    background-color: #250D44;
-    padding: 24px;
+.featured-card {
+  max-width: 380px;
+  border-radius: 40px;
+  background-color: #250d44;
+  padding: 24px;
 }
-.featured-card h4{
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #ffffff;
-    max-width: 332px;
+.featured-card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  max-width: 332px;
 }
-.featured-card p{
-    font-size: 1rem;
-    color: #ffffff;
-    line-height: 1.8;
-    opacity: 60%;
-    max-width: 332px;
-    margin: 12px 0px;
+.featured-card p {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.8;
+  opacity: 60%;
+  max-width: 332px;
+  margin: 12px 0px;
 }
-.featured-card h6{
-    font-size: 1rem;
-    color: #00ff88;
-    line-height: 1.8;
-    font-weight: 600;
-    max-width: 332px;
+.featured-card h6 {
+  font-size: 1rem;
+  color: #00ff88;
+  line-height: 1.8;
+  font-weight: 600;
+  max-width: 332px;
 }
 .watch-time {
-    align-items: center;
-    gap: 10px;
+  align-items: center;
+  gap: 10px;
 }
-.watch-time img{
-    max-width: 20px;
-    max-height: 20px
+.watch-time img {
+  max-width: 20px;
+  max-height: 20px;
+}
+.host-contant {
+  background-color: #250d44;
+  padding: 40px;
+  align-items: center;
+  gap: 24px;
+  border-radius: 40px;
+}
+.host-detais h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+  max-width: 896px;
+}
+.host-detais p {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.8;
+  opacity: 60%;
+  max-width: 896px;
+  margin-bottom: 16px;
+}
+.host-link {
+  padding: 9.5px 10px;
+  border: 1px solid #533c72;
+  border-radius: 100%;
+  max-width: 20px;
+  max-height: 20px;
+  margin-right: 8px;
+  justify-items: center;
 }
 @media screen and (max-width: 576px) {
   .brand {
@@ -307,28 +342,56 @@ header , .featured ,.the-host {
     max-width: 300px;
     margin-top: 25px;
   }
-  .featured-container{
-    padding: 40px 20px;
+  .featured-container,
+  .host-container {
+    padding: 20px 20px;
     margin: 0 auto;
-}
-.featured-container h2{
+  }
+  .featured-container h2,
+  .host-container h2 {
     font-size: 2rem;
     margin-bottom: 24px;
     margin-top: 16px;
-}
-.featured-contant{
+  }
+  .featured-contant {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 16px;
-}
-.featured-card{
+  }
+  .featured-card {
     max-width: 400px;
     padding: 16px;
-}
-.featured-card h4{
+  }
+  .featured-card h4 {
     font-size: 1.25rem;
     max-width: 368px;
-}
+  }
+  .host-contant {
+    padding: 24px 20px;
+    align-items: center;
+    gap: 24px;
+    border-radius: 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .host-detais h3 {
+    font-size: 1.5rem;
+    max-width: 352px;
+  }
+  .host-detais p {
+    line-height: 1.8;
+    opacity: 60%;
+    max-width: 352px;
+  }
+  .host-link {
+    padding: 9.5px 10px;
+    border: 1px solid #533c72;
+    border-radius: 100%;
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 8px;
+    justify-items: center;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .about-user {
@@ -343,14 +406,22 @@ header , .featured ,.the-host {
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
   }
-  .featured-contant{
+  .featured-contant {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 16px;
-}
-.featured-container h2{
+  }
+  .featured-container h2 {
     font-size: 2.5rem;
     margin-bottom: 24px;
     margin-top: 16px;
-}
+  }
+  .host-contant {
+    padding: 24px 20px;
+    align-items: center;
+    gap: 24px;
+    border-radius: 40px;
+    flex-direction: column;
+    text-align: center;
+  }
 }
